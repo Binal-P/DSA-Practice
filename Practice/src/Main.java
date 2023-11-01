@@ -24,5 +24,8 @@ public class Main {
        rnum.reverseNum(1824);
        int result = rnum.rev2(1234);
         System.out.println(result);
+        CountZeros countZeros = new CountZeros();
+        int num = countZeros.countZero(1020405);
+        System.out.println(num);
     }
 }
