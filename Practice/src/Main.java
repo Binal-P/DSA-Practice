@@ -20,5 +20,9 @@ public class Main {
         ProductOfDigits pod = new ProductOfDigits();
         int product = pod.productOfDigits(1342);
         System.out.println(product);
+        ReverseANumber rnum = new ReverseANumber();
+       rnum.reverseNum(1824);
+       int result = rnum.rev2(1234);
+        System.out.println(result);
     }
 }
