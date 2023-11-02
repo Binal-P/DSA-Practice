@@ -1,5 +1,6 @@
 import Recursion.EasyProblems.*;
 import Recursion.FibonacciNumbers;
+import Recursion.SubsetSubsequenceString.NewStringSkippingChar;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,5 +28,13 @@ public class Main {
         CountZeros countZeros = new CountZeros();
         int num = countZeros.countZero(1020405);
         System.out.println(num);
+        NewStringSkippingChar skip = new NewStringSkippingChar();
+        skip.getNewString("baccdah");
+        String strstr = skip.getNewString1("baccadah");
+        System.out.println(strstr);
+        String skipApple = skip.skipApple("bcappledf");
+        System.out.println(skipApple);
+        String skipAppNotApple = skip.skipAppNotApple("baappcappledah");
+        System.out.println(skipAppNotApple);
     }
 }
