@@ -1,5 +1,6 @@
 import Recursion.EasyProblems.*;
 import Recursion.FibonacciNumbers;
+import Recursion.SubsetSubsequenceString.AllCombinationofString;
 import Recursion.SubsetSubsequenceString.NewStringSkippingChar;
 
 public class Main {
@@ -36,5 +37,8 @@ public class Main {
         System.out.println(skipApple);
         String skipAppNotApple = skip.skipAppNotApple("baappcappledah");
         System.out.println(skipAppNotApple);
+        AllCombinationofString all = new AllCombinationofString();
+        all.getAllCombinations("","abc");
+
     }
 }
