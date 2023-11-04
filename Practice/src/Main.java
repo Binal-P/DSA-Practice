@@ -1,7 +1,12 @@
 import Recursion.EasyProblems.*;
 import Recursion.FibonacciNumbers;
+import Recursion.Permutations.AllPermutationOfString;
 import Recursion.SubsetSubsequenceString.AllCombinationofString;
+import Recursion.SubsetSubsequenceString.Iterative.AllCombinationOfIntegerInArray;
+import Recursion.SubsetSubsequenceString.Iterative.AllcombinationOfDuplicateIntegerInArray;
 import Recursion.SubsetSubsequenceString.NewStringSkippingChar;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +44,23 @@ public class Main {
         System.out.println(skipAppNotApple);
         AllCombinationofString all = new AllCombinationofString();
         all.getAllCombinations("","abc");
+        int[] nums = {1,2,3};
+        AllCombinationOfIntegerInArray all1 = new AllCombinationOfIntegerInArray();
+        List<List<Integer>> anssorted= all1.getAllSubsets(nums);
+//        for(List<Integer> res:anssorted){
+//            System.out.println(res);
+//        }
+        int[] array = {1,2,2};
+        AllcombinationOfDuplicateIntegerInArray all2 = new AllcombinationOfDuplicateIntegerInArray();
+        List<List<Integer>> ass = all2.getAllSubsets(array);
+        ass.forEach(System.out::println);
+        AllPermutationOfString allper = new AllPermutationOfString();
+//        allper.allPermutaions("abc");
+        System.out.println("Here");
+        List<String> ans = allper.allPermutaionsList("abc");
+         System.out.println(ans);
+        int anssss = allper.allPermutaionsCount("abcd");
+        System.out.println(anssss);
 
     }
 }
