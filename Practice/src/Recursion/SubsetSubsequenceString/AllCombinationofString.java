@@ -5,7 +5,6 @@ import java.util.List;
 
 public class AllCombinationofString {
     public void getAllCombinations(String p,String up){
-        List<String> list = new ArrayList<>();
         if(up.isEmpty()){
             System.out.println(p);
             return;

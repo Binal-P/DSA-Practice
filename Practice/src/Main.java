@@ -61,6 +61,8 @@ public class Main {
          System.out.println(ans);
         int anssss = allper.allPermutaionsCount("abcd");
         System.out.println(anssss);
-
+        CountGoodNumber count = new CountGoodNumber();
+        int total =count.countGoodNumbers(5);
+        System.out.println(total);
     }
 }
