@@ -1,3 +1,5 @@
+import Day7.LongestSubstringWithoutRepeating;
+import Day8.JumpGame;
 import Recursion.EasyProblems.*;
 import Recursion.FibonacciNumbers;
 import Recursion.Permutations.AllPermutationOfString;
@@ -64,5 +66,10 @@ public class Main {
         CountGoodNumber count = new CountGoodNumber();
         int total =count.countGoodNumbers(5);
         System.out.println(total);
+        LongestSubstringWithoutRepeating len = new LongestSubstringWithoutRepeating();
+        int length = len.lengthOfLongestSubString("abcabcbb");
+        int[] jump = {2,3,1,1,4};
+        JumpGame jump1 = new JumpGame();
+        boolean isReachable = jump1.canJump(jump);
     }
 }
