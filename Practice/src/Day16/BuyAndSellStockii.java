@@ -15,4 +15,18 @@ public class BuyAndSellStockii {
         }
         return maxProfit;
     }
+    // with recursion
+    int maxProfit =0;
+    public int maxProfitWithRecursion(int[] prices) {
+        return maxProfit(prices,1);
+    }
+    private int maxProfit(int[] prices,int index){
+        if(index==prices.length){
+            return maxProfit;
+        }
+        if(prices[index]>prices[index-1]){
+            maxProfit+= prices[index]-prices[index-1];
+        }
+        return  maxProfit(prices,index+1);
+    }
 }

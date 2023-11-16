@@ -47,4 +47,27 @@ public class LongestIncreasingSubseq {
         }
         return left;
     }
+
+    //with recursion
+    public int lengthOfLISWithRecursion(int[] nums) {
+        List<Integer> sub = new ArrayList<>();
+        int n= nums.length;
+        sub.add(nums[0]);
+        return lengthOfLIS(nums, n,1,sub);
+    }
+
+    private int lengthOfLIS(int[] nums, int n, int index, List<Integer> sub){
+        if(index == n){
+            return sub.size();
+        }
+        int num = nums[index];
+        if(num>sub.get(sub.size()-1)){
+            sub.add(num);
+        } else{
+            int j = binarySearch(sub,num);
+            sub.set(j,num);
+        }
+        lengthOfLIS(nums, n, index+1, sub);
+        return sub.size();
+    }
 }
