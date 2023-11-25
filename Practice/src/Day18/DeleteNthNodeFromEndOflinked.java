@@ -1,6 +1,6 @@
-package Day17;
+package Day18;
 
-import Day15.ListNode;
+import Day16.ListNode;
 
 public class DeleteNthNodeFromEndOflinked {
     //Given the head of a linked list, remove the nth node from the end of the list and return its head.

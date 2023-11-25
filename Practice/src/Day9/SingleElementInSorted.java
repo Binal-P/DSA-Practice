@@ -1,4 +1,4 @@
-package Day8;
+package Day9;
 
 public class SingleElementInSorted {
     //You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.
