@@ -1,6 +1,6 @@
 package Day5;
 
-public class RoatedSortedArraySearch {
+public class RotatedSortedArraySearch {
     public int search(int[] nums, int target) {
         //There is an integer array nums sorted in ascending order (with distinct values).
         //
