@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryStringWithNoConsecutive1s {
+    //https://www.codingninjas.com/studio/problems/binary-strings-with-no-consecutive-1s_893001?leftPanelTabValue=PROBLEM
     public List< String > generateString(int N) {
         List<String> ans = new ArrayList<>();
         rec(ans,"",N);

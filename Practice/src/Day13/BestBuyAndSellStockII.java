@@ -1,6 +1,6 @@
-package Day16;
+package Day13;
 
-public class BuyAndSellStockii {
+public class BestBuyAndSellStockII {
     //You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
     //
     //On each day, you may decide to buy and/or sell the stock. You can only hold at most one share of the stock at any time. However, you can buy it then immediately sell it on the same day.
@@ -29,4 +29,5 @@ public class BuyAndSellStockii {
         }
         return  maxProfit(prices,index+1);
     }
+
 }
