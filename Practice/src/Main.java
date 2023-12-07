@@ -1,5 +1,10 @@
-import Day7.LongestSubstringWithoutRepeating;
-import Day8.JumpGame;
+import Day12.BinaryStringWithNoConsecutive1s;
+import Day12.LongestPalindromicSubstring;
+import Day13.BestBuySellStockIII;
+import Day16.ListNode;
+import Day20.NQueens;
+import Day8.LongestSubstringWithoutRepeating;
+import Day9.JumpGame;
 import Recursion.EasyProblems.*;
 import Recursion.FibonacciNumbers;
 import Recursion.Permutations.AllPermutationOfString;
@@ -71,5 +76,18 @@ public class Main {
         int[] jump = {2,3,1,1,4};
         JumpGame jump1 = new JumpGame();
         boolean isReachable = jump1.canJump(jump);
+        BinaryStringWithNoConsecutive1s b = new BinaryStringWithNoConsecutive1s();
+        b.generateString(4);
+        LongestPalindromicSubstring lps = new LongestPalindromicSubstring();
+        lps.longestPalindrome("madam");
+        ListNode root = new ListNode();
+        ListNode one = new ListNode(1);
+        ListNode two = new ListNode(2);
+        int[] profits = {3,3,5,0,0,3,1,4};
+        BestBuySellStockIII b3 = new BestBuySellStockIII();
+        b3.maxProfit(profits);
+        NQueens nqueens = new NQueens();
+        nqueens.solveNQueens(4);
+
     }
 }
