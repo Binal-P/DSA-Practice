@@ -12,9 +12,6 @@ public class VerticalBinaryTraversal {
     //The vertical order traversal of a binary tree is a list of top-to-bottom orderings for each column index starting from the leftmost column and ending on the rightmost column. There may be multiple nodes in the same row and same column. In such a case, sort these nodes by their values.
     //
     //Return the vertical order traversal of the binary tree.
-    //
-    //
-
         Map<Integer, ArrayList<Pair<Integer,Integer>>> columnTable = new HashMap();
         int minCol =0;
         int maxCol = 0;

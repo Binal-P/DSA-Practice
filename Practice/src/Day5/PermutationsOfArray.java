@@ -12,7 +12,7 @@ public class PermutationsOfArray {
         List<List<Integer>> ans = new ArrayList<>();
         if(currentIndex==unprocessed.length){
             List<Integer> list = new ArrayList<>();
-            for(var item:processed){
+            for(Integer item:processed){
                 list.add(item);
             }
             ans.add(list);
